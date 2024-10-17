@@ -40,8 +40,8 @@ body: Center(
 
         tasksReference .add(
           {
-            "title":"Ir a comprar libros",
-            "description": "comprar de matematica"  
+            "title":"Ir a comprar libros 2",
+            "description": "comprar libros de matematica"  
 
           },
           ).then(( DocumentReference value){
@@ -60,11 +60,11 @@ body: Center(
     
       ElevatedButton(onPressed: (){
         tasksReference
-        .doc("hx8sMt3tIjAZyIdVm5FQ")
+        .doc("lCQAop38sOVqV8Dlg83v")
         .update(
           {
-            "title": "Ir de paseo ",
-            "description":"Tenemos que salir muy temprano",
+            "title": "Ir de paseo a el mirador ",
+            "description":"Tenemos que salir en la tarde",
           },
           )
         .catchError(
