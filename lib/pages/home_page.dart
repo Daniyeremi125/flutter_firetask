@@ -95,6 +95,22 @@ body: Center(
         "Eliminar Documento",
         ),
       ),
+      ElevatedButton(onPressed: (){
+          tasksReference.doc("A00001").set(
+            {
+              "title": "Ir al consierto",
+              "description": "Este fin de semana debemos ir a tomar ",
+            },
+          ).catchError((error){
+              print(error);
+          }).whenComplete((){
+            print("Creacion completada");
+          });
+      },
+       child: Text("Agregar documento perzonalizado",
+       ),
+      ),
+
     ],
   ),
 ),
