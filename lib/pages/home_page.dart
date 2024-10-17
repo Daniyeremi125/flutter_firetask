@@ -58,7 +58,7 @@ body: Center(
        ),
        ),
     
-      ElevatedButton(onPressed: (){
+      ElevatedButton(onPressed: (){ 
         tasksReference
         .doc("lCQAop38sOVqV8Dlg83v")
         .update(
@@ -78,6 +78,22 @@ body: Center(
       },       
       child: Text("Actualizar documento",
       ),
+      ),
+      
+      ElevatedButton(onPressed: (){
+        tasksReference.doc("lCQAop38sOVqV8Dlg83v").delete().catchError(
+          (error){
+            print(error);
+          },
+        ).whenComplete(
+          (){
+            print("La eliminacion esta completada");
+            },
+          );
+      }, 
+      child: Text(
+        "Eliminar Documento",
+        ),
       ),
     ],
   ),
