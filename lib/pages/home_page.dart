@@ -40,8 +40,8 @@ body: Center(
 
         tasksReference .add(
           {
-            "title":"Ir a comprar mangas puercos 2",
-            "description": "comprar coca cola"  
+            "title":"Ir a comprar libros",
+            "description": "comprar de matematica"  
 
           },
           ).then(( DocumentReference value){
