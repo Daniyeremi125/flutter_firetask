@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "761060143276",
+    "project_id": "fire-dany",
+    "storage_bucket": "fire-dany.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761060143276:android:a3e6c78ebdee09c320af09",
+        "android_client_info": {
+          "package_name": "com.example.flutter_firetask"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFmEcaJA1BNIZlhxyfPeLDC5FEgHU4nQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
